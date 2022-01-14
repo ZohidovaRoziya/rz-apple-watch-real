@@ -56,56 +56,56 @@ img {
   padding-right: 50px;
 }
 
-
 /* SITE BUTTON CSS START  */
 .site-button {
-    display: inline-block;
-    background-color: var(--primary-color);
-    padding: 12px 38px;
-    font-size: 18px;
-    line-height: 150%;
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    border: 0;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 260px;
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 12px 38px;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  transition: background-color 0.3s ease;
 }
 
-.site-button:hover{
-    background-color: var(--primary-dark-color);
+.site-button:hover {
+  background-color: var(--primary-dark-color);
 }
 
-.site-button:active{
-    opacity: 0.6;
+.site-button:active {
+  opacity: 0.6;
 }
 
 /* LEARN BUTTON LINK  */
 .learn-link {
-    display: inline-flex;
-    align-items: center;
-    color: var(--primary-color);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-style: 16px;
-    line-height: 1.6;
-    text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: 16px;
+  line-height: 1.6;
+  text-decoration: none;
 }
 
 .learn-link::before {
-    content: "";
-    width: 40px;
-    height: 3px;
-    background-color: var(--primary-color);
-    margin-right: 10px;
-    transition: width 0.3s ease;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin-right: 10px;
+  transition: width 0.3s ease;
 }
 
 .learn-link:hover::before {
-    width: 60px;
-} 
-
+  width: 60px;
+}
 
 /* SAIT MAIN CSS START  */
 .site-main {
@@ -129,11 +129,11 @@ img {
 }
 
 .site-logo-link:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .site-logo-link:active {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .site-logo-img {
@@ -160,7 +160,7 @@ img {
 }
 
 .site-item-link {
-    display: block;
+  display: block;
   margin: 0;
   padding-top: 6px;
   padding-bottom: 3px;
@@ -174,108 +174,149 @@ img {
 }
 
 .site-item-link:hover {
-    border-bottom: 3px solid var(--text-color);
+  border-bottom: 3px solid var(--text-color);
 }
 
 .search-input {
-    margin: 0;
-    border: 0;
-    padding: 6px 0px;
-    border-bottom: 1px solid var(--text-color);
+  margin: 0;
+  border: 0;
+  padding: 6px 0px;
+  border-bottom: 1px solid var(--text-color);
 }
-
 
 /* HERO SECTION CSS START   */
 .hero-section {
-    padding-top: 140px;
-    padding-bottom: 185px;
-    border-bottom: 2px solid #ddd;
-    background-image: url("../images/hero-bg-img.jpg");
-    background-repeat: no-repeat;
-    background-position: left calc(50% + 550px) bottom;
+  padding-top: 140px;
+  padding-bottom: 185px;
+  border-bottom: 2px solid #ddd;
+  background-image: url("../images/hero-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 550px) bottom;
 }
 
+/* LEAD CTA CSS START  */
 .lead-cta {
-    width: 100%;
-    max-width: 490px;
+  width: 100%;
+  max-width: 490px;
 }
 
 .lead-cta-heading {
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
-    font-size: 50px;
-    line-height: 1.2;
-    color: #000;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.lead-cta-heading.heading-cta-lead {
+  color: #fff;
 }
 
 .lead-cta-text {
-    margin: 0;
-    padding: 0;
-    color: #777;
-    padding-left: 37px;
-    border-left: 3px solid #888;
-    margin-bottom: 30px;
+  margin: 0;
+  padding: 0;
+  color: #777;
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-bottom: 30px;
 }
 
+.lead-cta-text.text-cta-lead {
+    color: #fff;
+    border-color: #fff;
+}
 
 /* FEATURES SECTION CSS START  */
 .features-section {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .features-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .features-item {
-    width: 280px;
+  width: 280px;
 }
 
-.features-item:not(:last-child){
-    margin-right: 80px;
+.features-item:not(:last-child) {
+  margin-right: 80px;
 }
 
 .features-heading {
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
-    font-size: 18px;
-    line-height: 150%;
-    text-transform: uppercase;
-    color: #222;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #222;
 }
 
 .features-text {
-    margin: 0;
-    margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .features-divider {
-    width: 8px;
-    height: 8px;
-    border: 0;
-    background-color: #ddd;
-    box-shadow: 16px 0 0 0 #ddd,
-        32px 0 0 0 #ddd;
+  width: 8px;
+  height: 8px;
+  border: 0;
+  background-color: #ddd;
+  box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
 }
 
+/* PROMO SECTION CSS START  */
+.promo-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-img {
+  display: flex;
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* RUNNERS SECTION CSS STAR  */
+.runners-section {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("../images/runners.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.runners-lead-cta {
+  margin-left: auto;
+}
 
 /* RETINA BG CSS START  */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
   .hero-section {
-      background-image: url("../images/hero-bg-img@2x.jpg")
+    background-image: url("../images/hero-bg-img@2x.jpg");
   }
 
+  .runners-section {
+      background-image: url("../images/runners@2x.jpg");
+  }
 }
