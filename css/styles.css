@@ -55,6 +55,22 @@ img {
   padding-right: 50px;
 }
 
+
+/* SITE BUTTON CSS START  */
+.site-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 12px 38px;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+}
+
 /* SAIT MAIN CSS START  */
 .site-main {
   flex-grow: 1;
@@ -130,4 +146,54 @@ img {
     border: 0;
     padding: 6px 0px;
     border-bottom: 1px solid var(--text-color);
+}
+
+
+/* HERO SECTION CSS START   */
+.hero-section {
+    padding-top: 140px;
+    padding-bottom: 185px;
+    border-bottom: 2px solid #ddd;
+    background-image: url("../images/hero-bg-img.jpg");
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 550px) bottom;
+}
+
+.lead-cta {
+    width: 100%;
+    max-width: 490px;
+}
+
+.lead-cta-heading {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.lead-cta-text {
+    margin: 0;
+    padding: 0;
+    color: #777;
+    padding-left: 37px;
+    border-left: 3px solid #888;
+    margin-bottom: 30px;
+}
+
+
+/* RETINA BG CSS START  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .hero-section {
+      background-image: url("../images/hero-bg-img@2x.jpg")
+  }
+  
 }
