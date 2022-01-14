@@ -1,6 +1,7 @@
 /* CUSTOM PROPS CSS START  */
 :root {
   --primary-color: #ea625c;
+  --primary-dark-color: #c9514c;
   --text-color: #333;
 }
 
@@ -69,7 +70,42 @@ img {
     color: #fff;
     text-transform: uppercase;
     border: 0;
+    transition: background-color 0.3s ease;
 }
+
+.site-button:hover{
+    background-color: var(--primary-dark-color);
+}
+
+.site-button:active{
+    opacity: 0.6;
+}
+
+/* LEARN BUTTON LINK  */
+.learn-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: 16px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.learn-link::before {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-right: 10px;
+    transition: width 0.3s ease;
+}
+
+.learn-link:hover::before {
+    width: 60px;
+} 
+
 
 /* SAIT MAIN CSS START  */
 .site-main {
@@ -183,6 +219,52 @@ img {
 }
 
 
+/* FEATURES SECTION CSS START  */
+.features-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.features-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.features-item {
+    width: 280px;
+}
+
+.features-item:not(:last-child){
+    margin-right: 80px;
+}
+
+.features-heading {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.features-text {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.features-divider {
+    width: 8px;
+    height: 8px;
+    border: 0;
+    background-color: #ddd;
+    box-shadow: 16px 0 0 0 #ddd,
+        32px 0 0 0 #ddd;
+}
+
+
 /* RETINA BG CSS START  */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -195,5 +277,5 @@ only screen and (                min-resolution: 2dppx) {
   .hero-section {
       background-image: url("../images/hero-bg-img@2x.jpg")
   }
-  
+
 }
