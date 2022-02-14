@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* CUSTOM PROPS CSS START  */
 :root {
   --primary-color: #ea625c;
@@ -9,13 +16,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 *:focus {
@@ -25,13 +34,19 @@
 
 html {
   height: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   background-color: #fff;
   padding: 0;
@@ -71,6 +86,8 @@ img {
   color: #fff;
   text-transform: uppercase;
   border: 0;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
@@ -84,8 +101,12 @@ img {
 
 /* LEARN BUTTON LINK  */
 .learn-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--primary-color);
   text-transform: uppercase;
   font-weight: bold;
@@ -100,6 +121,8 @@ img {
   height: 3px;
   background-color: var(--primary-color);
   margin-right: 10px;
+  -webkit-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
 
@@ -109,7 +132,9 @@ img {
 
 /* SAIT MAIN CSS START  */
 .site-main {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 /* SITE HEADER CSS START  */
@@ -119,12 +144,18 @@ img {
 }
 
 .site-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site-logo-link {
   margin-right: auto;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -140,7 +171,8 @@ img {
   display: block;
   width: 35px;
   height: 42px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .site-nav {
@@ -150,8 +182,12 @@ img {
 .site-list {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
 }
 
@@ -170,6 +206,8 @@ img {
   font-style: normal;
   font-size: 15px;
   line-height: 150%;
+  -webkit-transition: border-bottom 0.3s ease;
+  -o-transition: border-bottom 0.3s ease;
   transition: border-bottom 0.3s ease;
 }
 
@@ -234,6 +272,8 @@ img {
 }
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -268,7 +308,8 @@ img {
   height: 8px;
   border: 0;
   background-color: #ddd;
-  box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
+  -webkit-box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
+          box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
 }
 
 /* PROMO SECTION CSS START  */
@@ -278,16 +319,25 @@ img {
 }
 
 .promo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .promo-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 400px;
   height: 600px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* RUNNERS SECTION CSS STAR  */
@@ -307,7 +357,6 @@ img {
 
 /* RETINA BG CSS START  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
